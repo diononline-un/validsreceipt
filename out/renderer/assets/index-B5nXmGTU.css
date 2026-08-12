@@ -1,0 +1,1472 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+/*
+! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: Inter, system-ui, sans-serif; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: JetBrains Mono, Fira Code, monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+.block{
+  display: block;
+}
+
+.flex{
+  display: flex;
+}
+
+.table{
+  display: table;
+}
+
+.grid{
+  display: grid;
+}
+
+.hidden{
+  display: none;
+}
+
+.flex-shrink{
+  flex-shrink: 1;
+}
+
+.resize{
+  resize: both;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+:root {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #1c2128;
+  --bg-hover: #21262d;
+  --border-default: #30363d;
+  --border-muted: #21262d;
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --text-muted: #6e7681;
+  --accent-primary: #58a6ff;
+  --accent-success: #3fb950;
+  --accent-warning: #d2991d;
+  --accent-danger: #f85149;
+  --accent-purple: #a371f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+#app {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+::-moz-selection {
+  background: rgba(88, 166, 255, 0.3);
+}
+
+::selection {
+  background: rgba(88, 166, 255, 0.3);
+}
+
+input, textarea, select {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.15);
+}
+
+input::-moz-placeholder {
+  color: var(--text-muted);
+}
+
+input::placeholder {
+  color: var(--text-muted);
+}
+
+.field-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background: var(--accent-primary);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: opacity 0.15s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--border-default);
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--bg-hover);
+}
+
+.btn-danger {
+  background: var(--accent-danger);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: opacity 0.15s ease;
+}
+
+.btn-danger:hover {
+  opacity: 0.85;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.btn-ghost:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.btn-icon {
+  background: transparent;
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.btn-icon:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card-hover {
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.card-hover:hover {
+  border-color: var(--accent-primary);
+  background: var(--bg-tertiary);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.badge-success {
+  background: rgba(63, 185, 80, 0.15);
+  color: var(--accent-success);
+}
+
+.badge-default {
+  background: rgba(110, 118, 129, 0.15);
+  color: var(--text-secondary);
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.empty-state svg {
+  margin-bottom: 16px;
+  opacity: 0.3;
+}
+
+.empty-state h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  font-size: 13px;
+  max-width: 300px;
+}
+
+  .sidebar.svelte-1blqy0v {
+    width: 220px;
+    height: 100%;
+    background: var(--bg-secondary);
+    border-right: 1px solid var(--border-default);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+
+  .sidebar-header.svelte-1blqy0v {
+    padding: 20px 16px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--border-muted);
+  }
+
+  .logo-icon.svelte-1blqy0v {
+    color: var(--accent-primary);
+  }
+
+  .logo-text.svelte-1blqy0v {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+  }
+
+  .sidebar-nav.svelte-1blqy0v {
+    flex: 1;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .nav-item.svelte-1blqy0v {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    transition: all 0.15s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .nav-item.svelte-1blqy0v:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+  }
+
+  .nav-item.active.svelte-1blqy0v {
+    background: rgba(88, 166, 255, 0.1);
+    color: var(--accent-primary);
+  }
+
+  .nav-icon.svelte-1blqy0v {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+  }
+
+  .sidebar-footer.svelte-1blqy0v {
+    padding: 12px 16px;
+    border-top: 1px solid var(--border-muted);
+  }
+
+  .version.svelte-1blqy0v {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .page-header.svelte-1thed0a {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+  h1.svelte-1thed0a { font-size: 24px; font-weight: 600; letter-spacing: -0.5px; }
+  .subtitle.svelte-1thed0a { color: var(--text-secondary); font-size: 13px; margin-top: 4px; }
+  .receipt-list.svelte-1thed0a { display: flex; flex-direction: column; gap: 8px; }
+  .receipt-card.svelte-1thed0a { padding: 16px; }
+  .receipt-card-header.svelte-1thed0a { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  .receipt-card-header.svelte-1thed0a h3:where(.svelte-1thed0a) { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .receipt-card-actions.svelte-1thed0a { display: flex; gap: 4px; }
+  .receipt-card-info.svelte-1thed0a { font-size: 12px; color: var(--text-secondary); display: flex; gap: 8px; align-items: center; }
+  .sep.svelte-1thed0a { color: var(--border-default); }
+  .receipt-amount.svelte-1thed0a { color: var(--accent-success); font-family: 'JetBrains Mono', monospace; font-weight: 500; }
+
+  .generate-page.svelte-332qf7 {
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+  }
+
+  .import-bar.svelte-332qf7 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .import-row.svelte-332qf7 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .import-row.svelte-332qf7 input:where(.svelte-332qf7) {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .import-row.svelte-332qf7 .btn-secondary:where(.svelte-332qf7) {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .import-row.svelte-332qf7 .btn-secondary.active:where(.svelte-332qf7) {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+  }
+
+  .ai-btn.svelte-332qf7 {
+    background: var(--accent-purple) !important;
+    color: #fff !important;
+    border: none !important;
+  }
+
+  .ai-btn.svelte-332qf7:hover {
+    opacity: 0.85;
+  }
+
+  .cart-btn.svelte-332qf7 {
+    background: var(--accent-success) !important;
+    color: #fff !important;
+    border: none !important;
+  }
+
+  .cart-btn.svelte-332qf7:hover {
+    opacity: 0.85;
+  }
+
+  .cart-btn.svelte-332qf7:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .paste-area.svelte-332qf7 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .paste-area.svelte-332qf7 textarea:where(.svelte-332qf7) {
+    width: 100%;
+    resize: vertical;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .paste-actions.svelte-332qf7 {
+    display: flex;
+    gap: 8px;
+  }
+
+  .editor-layout.svelte-332qf7 {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .left-panel.svelte-332qf7 {
+    overflow-y: auto;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .right-panel.svelte-332qf7 {
+    overflow: hidden;
+    display: flex;
+    border-radius: 8px;
+  }
+
+  .field.svelte-332qf7 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .field-flex.svelte-332qf7 {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .field-row.svelte-332qf7 {
+    display: flex;
+    gap: 10px;
+  }
+
+  .field-with-btn.svelte-332qf7 {
+    display: flex;
+    gap: 4px;
+  }
+
+  .field-with-btn.svelte-332qf7 input:where(.svelte-332qf7) {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .field-btn.svelte-332qf7 {
+    font-size: 11px;
+    padding: 4px 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .section-label.svelte-332qf7 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-top: 6px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--border-muted);
+  }
+
+  .products-list.svelte-332qf7 {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .product-card.svelte-332qf7 {
+    padding: 10px 12px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-muted);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .product-card.selected.svelte-332qf7 {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 1px var(--accent-primary);
+    background: var(--bg-secondary);
+  }
+
+  .product-main.svelte-332qf7 {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .product-img.svelte-332qf7 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--bg-secondary);
+    flex-shrink: 0;
+  }
+
+  .product-img.svelte-332qf7 img:where(.svelte-332qf7) {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .product-img-empty.svelte-332qf7 {
+    width: 100%;
+    height: 100%;
+    background: var(--bg-hover);
+  }
+
+  .product-fields.svelte-332qf7 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .product-fields.svelte-332qf7 input:where(.svelte-332qf7) {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .product-detail-row.svelte-332qf7 {
+    display: flex;
+    gap: 6px;
+  }
+
+  .product-detail-row.svelte-332qf7 input:where(.svelte-332qf7) {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .product-right.svelte-332qf7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  .product-line-total.svelte-332qf7 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .empty-products.svelte-332qf7 {
+    padding: 24px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    border: 1px dashed var(--border-default);
+    border-radius: 8px;
+    background: var(--bg-tertiary);
+  }
+
+  .totals-box.svelte-332qf7 {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .total-row.svelte-332qf7 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 2px 0;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .total-row.svelte-332qf7 > span:where(.svelte-332qf7):first-child {
+    color: var(--text-secondary);
+  }
+
+  .total-row.svelte-332qf7 > span:where(.svelte-332qf7):last-child {
+    font-weight: 500;
+  }
+
+  .total-row-bold.svelte-332qf7 {
+    font-weight: 600;
+    font-size: 14px;
+    border-top: 1px solid var(--border-default);
+    margin-top: 2px;
+    padding-top: 6px;
+  }
+
+  .total-row-bold.svelte-332qf7 > span:where(.svelte-332qf7) {
+    color: var(--text-primary) !important;
+  }
+
+  .save-btn.svelte-332qf7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+
+  .save-btn.svelte-332qf7:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* === Outlook Mail Client Chrome === */
+  .mail-client.svelte-332qf7 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    background: #ffffff;
+    color: #1a1a1a;
+  }
+
+  .mail-client.mail-dark.svelte-332qf7 {
+    background: #1c1c1c;
+    color: #e0e0e0;
+  }
+
+  /* Toolbar */
+  .mail-toolbar.svelte-332qf7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    flex-shrink: 0;
+    min-height: 40px;
+  }
+
+  .mail-dark.svelte-332qf7 .mail-toolbar:where(.svelte-332qf7) {
+    background: #2d2d2d;
+    border-color: #3d3d3d;
+  }
+
+  .mail-toolbar-left.svelte-332qf7 {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .mail-toolbar-right.svelte-332qf7 {
+    display: flex;
+    align-items: center;
+  }
+
+  .mail-tb-btn.svelte-332qf7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: #555;
+    cursor: pointer;
+  }
+
+  .mail-tb-btn.svelte-332qf7:hover {
+    background: #e0e0e0;
+    color: #1a1a1a;
+  }
+
+  .mail-dark.svelte-332qf7 .mail-tb-btn:where(.svelte-332qf7) {
+    color: #aaa;
+  }
+
+  .mail-dark.svelte-332qf7 .mail-tb-btn:where(.svelte-332qf7):hover {
+    background: #3d3d3d;
+    color: #fff;
+  }
+
+  .mail-tb-sep.svelte-332qf7 {
+    width: 1px;
+    height: 20px;
+    background: #d0d0d0;
+    margin: 0 4px;
+  }
+
+  .mail-dark.svelte-332qf7 .mail-tb-sep:where(.svelte-332qf7) {
+    background: #3d3d3d;
+  }
+
+  .mail-theme-label.svelte-332qf7 {
+    font-size: 11px;
+    font-weight: 500;
+    color: #888;
+    padding: 0 8px;
+  }
+
+  /* Email Header */
+  .mail-header.svelte-332qf7 {
+    padding: 16px 20px 12px;
+    border-bottom: 1px solid #e8e8e8;
+    flex-shrink: 0;
+  }
+
+  .mail-dark.svelte-332qf7 .mail-header:where(.svelte-332qf7) {
+    border-color: #333;
+  }
+
+  .mail-sender-row.svelte-332qf7 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .mail-avatar.svelte-332qf7 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .mail-dark.svelte-332qf7 .mail-avatar:where(.svelte-332qf7) {
+    background: #e0e0e0;
+    color: #1a1a1a;
+  }
+
+  .mail-sender-info.svelte-332qf7 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mail-sender-name.svelte-332qf7 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+
+  .mail-dark.svelte-332qf7 .mail-sender-name:where(.svelte-332qf7) {
+    color: #e0e0e0;
+  }
+
+  .mail-sender-email.svelte-332qf7 {
+    font-size: 11px;
+    color: #888;
+    margin-top: 1px;
+  }
+
+  .mail-date.svelte-332qf7 {
+    font-size: 12px;
+    color: #888;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .mail-subject.svelte-332qf7 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 2px;
+  }
+
+  .mail-dark.svelte-332qf7 .mail-subject:where(.svelte-332qf7) {
+    color: #e0e0e0;
+  }
+
+  /* Mail Body (contains the actual receipt) */
+  .mail-body.svelte-332qf7 {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+  }
+
+  .mail-body.svelte-332qf7 table {
+    margin: 0 auto;
+  }
+
+  /* === End Mail Client === */
+
+  .preview-empty.svelte-332qf7 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--text-muted);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+  }
+
+  .preview-empty.svelte-332qf7 p:where(.svelte-332qf7) {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+
+  .preview-empty.svelte-332qf7 span:where(.svelte-332qf7) {
+    font-size: 13px;
+    max-width: 280px;
+    line-height: 1.5;
+  }
+
+  .page-header.svelte-1r3pxcs {
+    display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;
+  }
+  h1.svelte-1r3pxcs { font-size: 24px; font-weight: 600; letter-spacing: -0.5px; }
+  .subtitle.svelte-1r3pxcs { color: var(--text-secondary); font-size: 13px; margin-top: 4px; }
+
+  .form-grid.svelte-1r3pxcs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .field.svelte-1r3pxcs { display: flex; flex-direction: column; gap: 4px; }
+
+  .brand-list.svelte-1r3pxcs { display: flex; flex-direction: column; gap: 8px; }
+  .brand-item.svelte-1r3pxcs { padding: 16px; display: flex; justify-content: space-between; align-items: center; }
+  .brand-info.svelte-1r3pxcs h3:where(.svelte-1r3pxcs) { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .brand-meta.svelte-1r3pxcs { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .meta-item.svelte-1r3pxcs { font-size: 11px; color: var(--text-muted); }
+  .brand-actions.svelte-1r3pxcs { display: flex; gap: 4px; }
+
+  .btn-primary[disabled].svelte-1r3pxcs { opacity: 0.5; cursor: not-allowed; }
+
+  h1.svelte-1yt3evz { font-size: 24px; font-weight: 600; letter-spacing: -0.5px; }
+
+  .page-header.svelte-1yt3evz {
+    display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;
+  }
+  .form-grid.svelte-1yt3evz { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .field.svelte-1yt3evz { display: flex; flex-direction: column; gap: 4px; }
+
+  .selector-item.svelte-1yt3evz {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 12px; background: var(--bg-tertiary); border-radius: 6px;
+    margin-top: 4px;
+  }
+  .selector-item.svelte-1yt3evz code:where(.svelte-1yt3evz) { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent-primary); }
+
+  h1.svelte-122nbyn { font-size: 24px; font-weight: 600; letter-spacing: -0.5px; }
+  .subtitle.svelte-122nbyn { color: var(--text-secondary); font-size: 13px; margin-top: 4px; }
+
+  .page-header.svelte-122nbyn {
+    display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;
+  }
+
+  .detail-grid.svelte-122nbyn { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .detail-block.svelte-122nbyn strong:where(.svelte-122nbyn) { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 8px; }
+  .detail-row.svelte-122nbyn { display: flex; justify-content: space-between; padding: 4px 0; font-size: 13px; }
+  .detail-row.svelte-122nbyn span:where(.svelte-122nbyn):first-child { color: var(--text-secondary); }
+
+  .mono.svelte-122nbyn { font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+
+  .preview-wrapper.svelte-122nbyn {
+    background: white; color: #1a1a1a; border-radius: 8px;
+    overflow: hidden; max-height: 800px; overflow-y: auto;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  }
+
+  .app-layout.svelte-1n46o8q {
+    display: flex;
+    height: 100vh;
+  }
+  .main-content.svelte-1n46o8q {
+    flex: 1;
+    overflow-y: auto;
+    padding: 32px;
+    min-width: 0;
+  }

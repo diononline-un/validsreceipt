@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "composite": true,
+    "outDir": "./out",
+    "types": ["electron-vite/node"]
+  },
+  "include": ["electron/**/*.ts", "src/lib/types.ts", "vite.config.*", "electron.vite.config.*"]
+}
