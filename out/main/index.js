@@ -1535,7 +1535,7 @@ async function captureReceiptScreenshot(html, receiptId, dataDir) {
     });
   });
 }
-const API_KEY = "REDACTED-ROTATED";
+const API_KEY = process.env.DEEPSEEK_API_KEY ?? '';
 const API_URL = "https://api.deepseek.com/v1/chat/completions";
 const MODEL = "deepseek-chat";
 async function chat(messages, temperature) {
